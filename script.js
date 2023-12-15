@@ -1,9 +1,9 @@
-window.addEventListener("load", function () {
+ window.addEventListener("load", function () {
     addRequiredClasses();
 });
 
 function addRequiredClasses() {
-    if (window.innerWidth < 860) {
+    if (window.innerWidth < 600) {
         document.body.classList.add('mobile');
     } else {
         document.body.classList.remove('mobile');
