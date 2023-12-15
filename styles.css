@@ -1,4 +1,4 @@
-/* General styling */
+ /* General styling */
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
@@ -119,3 +119,61 @@ nav ul.dropdown-list {
 }
 
 /* ... (rest of the code remains unchanged) */
+
+
+/* Responsive design adjustments */
+
+/* General style adjustments for responsiveness */
+body, .menu-container {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Adjusting navigation for mobile view */
+.nav-wrapper {
+    flex-wrap: wrap;
+}
+
+/* Hiding large menu and showing hamburger icon in mobile view */
+.hamberger {
+    display: none;
+}
+
+/* Small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .hamberger {
+        display: block;
+    }
+    .nav-list {
+        display: none;
+        width: 100%;
+    }
+    .nav-wrapper {
+        flex-direction: column;
+    }
+    /* Adjusting menu items for mobile */
+    .nav-item {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    /* Adjustments for tablets can be added here */
+}
+
+/* Large devices (desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    /* Adjustments for desktops can be added here */
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    /* Adjustments for large desktops can be added here */
+}
+ 
